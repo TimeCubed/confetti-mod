@@ -12,8 +12,6 @@ public class Main implements ModInitializer
 {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Confetti");
 	
-	public static final DefaultParticleType CONFETTI = FabricParticleTypes.simple();
-	
 	public void onInitialize() {
 		AutoConfig.register(ConfigScreen.class, GsonConfigSerializer::new);
 		Main.LOGGER.info("Confetti initialized! Have fun with the confetti!");
