@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "confetti",
+	"version": "${version}",
+	"name": "Confetti",
+	"description": "Turns all totem particles into fun confetti",
+	"authors": [
+		"TimeSquared",
+		"The Fabric Community"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/confetti/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.timesquared.confetti.Main"
+		],
+		"modmenu": [
+			"me.timesquared.confetti.ModMenuImplementation"
+		]
+	},
+	"mixins": [
+		"confetti.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
