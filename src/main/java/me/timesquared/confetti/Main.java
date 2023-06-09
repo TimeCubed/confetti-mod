@@ -12,6 +12,6 @@ public class Main implements ModInitializer
 	
 	public void onInitialize() {
 		AutoConfig.register(ConfigScreen.class, GsonConfigSerializer::new);
-		Main.LOGGER.info("Confetti initialized! Have fun with the confetti!");
+		Main.LOGGER.info("Confetti Mod has been initialized!");
 	}
 }
