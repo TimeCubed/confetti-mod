@@ -1,6 +1,6 @@
 {
-  "autoconfig.confetti.option.redL": "Red: ",
-  "autoconfig.confetti.option.greenL": "Green: ",
-  "autoconfig.confetti.option.blueL": "Blue: ",
-  "autoconfig.confetti.option.randomColors": "Random Colors: "
+  "text.autoconfig.confetti.option.redL": "Red: ",
+  "text.autoconfig.confetti.option.greenL": "Green: ",
+  "text.autoconfig.confetti.option.blueL": "Blue: ",
+  "text.autoconfig.confetti.option.randomColors": "Random Colors: "
 }

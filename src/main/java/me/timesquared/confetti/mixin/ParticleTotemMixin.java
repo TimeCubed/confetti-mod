@@ -24,7 +24,25 @@ public class ParticleTotemMixin extends AnimatedParticle {
 		if (config.isRandomColors()) {
 			this.setColor((float) Math.random(), (float) Math.random(), (float) Math.random());
 		} else {
-			this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
+			if (config.isDoubleColors()) {
+				if (Math.random() <= 0.5) {
+					this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
+				} else {
+					this.setColor(config.getRedL2(), config.getGreenL2(), config.getBlueL2());
+				}
+			} else {
+				this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
+			}
 		}
+		
+		long totemPercent = config.getParticlePercent();
+		
+		if (!shouldRender(totemPercent)) {
+			this.markDead();
+		}
+	}
+	
+	public boolean shouldRender(long chance) {
+		return ((double) chance / 100) >= Math.random();
 	}
 }
