@@ -2,5 +2,10 @@
   "text.autoconfig.confetti.option.redL": "Red: ",
   "text.autoconfig.confetti.option.greenL": "Green: ",
   "text.autoconfig.confetti.option.blueL": "Blue: ",
-  "text.autoconfig.confetti.option.randomColors": "Random Colors: "
+  "text.autoconfig.confetti.option.randomColors": "Random Colors: ",
+  "text.autoconfig.confetti.option.redL2": "Red 2: ",
+  "text.autoconfig.confetti.option.greenL2": "Green 2: ",
+  "text.autoconfig.confetti.option.blueL2": "Blue 2: ",
+  "text.autoconfig.confetti.option.particlePercent": "Percent of particles to show: ",
+  "text.autoconfig.confetti.option.doubleColors": "Double Colors"
 }
