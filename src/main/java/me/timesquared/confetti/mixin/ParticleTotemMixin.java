@@ -20,11 +20,9 @@ public class ParticleTotemMixin extends AnimatedParticle {
 	@Inject(method = "<init>", at = @At("RETURN"))
 	public void onInit(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteProvider spriteProvider, CallbackInfo ci) {
 		ConfigScreen config = AutoConfig.getConfigHolder(ConfigScreen.class).getConfig();
-		float max = 0.75f;
-		float min = 0.25f;
 		
 		if (config.isRandomColors()) {
-			this.setColor((float) Math.random() * (max - min) + min, (float) Math.random() * (max - min) + min, (float) Math.random() * (max - min) + min);
+			this.setColor((float) Math.random(), (float) Math.random(), (float) Math.random());
 		} else {
 			this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
 		}
