@@ -10,7 +10,7 @@ public class ConfigScreen implements ConfigData {
 	long redL = 0L, greenL = 0L, blueL = 0L, redL2 = 0L, greenL2 = 0L, blueL2 = 0L;
 	
 	@ConfigEntry.BoundedDiscrete(max = 100L)
-	long particlePercent = 0l;
+	long particlePercent = 100l;
 	boolean randomColors = true;
 	boolean doubleColors = false;
 	
