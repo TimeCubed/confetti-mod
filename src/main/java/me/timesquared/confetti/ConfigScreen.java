@@ -10,11 +10,11 @@ public class ConfigScreen implements ConfigData {
 	long particlePercent = 100L;
 	
 	@ConfigEntry.Gui.CollapsibleObject
-	@ConfigEntry.Gui.Tooltip
+	@ConfigEntry.Gui.Tooltip(count = 3)
 	SingleColors singleColors = new SingleColors();
 	
 	@ConfigEntry.Gui.CollapsibleObject
-	@ConfigEntry.Gui.Tooltip
+	@ConfigEntry.Gui.Tooltip(count = 2)
 	DoubleColors doubleColors = new DoubleColors();
 	
 	boolean randomColors = true;
