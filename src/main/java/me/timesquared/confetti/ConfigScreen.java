@@ -7,31 +7,48 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 @Config(name = "confetti")
 public class ConfigScreen implements ConfigData {
 	@ConfigEntry.BoundedDiscrete(max = 100L)
-	long redL = 0L, greenL = 0L, blueL = 0L, redL2 = 0L, greenL2 = 0L, blueL2 = 0L;
+	long particlePercent = 100L;
 	
-	@ConfigEntry.BoundedDiscrete(max = 100L)
-	long particlePercent = 100l;
+	@ConfigEntry.Gui.CollapsibleObject
+	@ConfigEntry.Gui.Tooltip
+	SingleColors singleColors = new SingleColors();
+	
+	@ConfigEntry.Gui.CollapsibleObject
+	@ConfigEntry.Gui.Tooltip
+	DoubleColors doubleColors = new DoubleColors();
+	
 	boolean randomColors = true;
-	boolean doubleColors = false;
+	boolean doubleColorsBool = false;
+	
+	static class SingleColors {
+		@ConfigEntry.BoundedDiscrete(max = 255L)
+		long red = 0L, blue = 0L, green = 0L;
+	}
+	
+	static class DoubleColors {
+		@ConfigEntry.BoundedDiscrete(max = 255L)
+		long red = 0L, green = 0L, blue = 0L;
+	}
+	
 	
 	public float getRedL() {
-		return (float) redL / 100;
+		return (float) singleColors.red / 255;
 	}
 	public float getGreenL() {
-		return (float) greenL / 100;
+		return (float) singleColors.green / 255;
 	}
 	public float getBlueL() {
-		return (float) blueL / 100;
+		return (float) singleColors.blue / 255;
 	}
 	
-	public long getRedL2() {
-		return redL2;
+	public float getRedL2() {
+		return (float) doubleColors.red / 255;
 	}
-	public long getBlueL2() {
-		return blueL2;
+	public float getBlueL2() {
+		return (float) doubleColors.blue / 255;
 	}
-	public long getGreenL2() {
-		return greenL2;
+	public float getGreenL2() {
+		return (float) doubleColors.green / 255;
 	}
 	
 	public long getParticlePercent() {
@@ -42,8 +59,6 @@ public class ConfigScreen implements ConfigData {
 		return randomColors;
 	}
 	public boolean isDoubleColors() {
-		return doubleColors;
+		return doubleColorsBool;
 	}
-	
-	
 }
