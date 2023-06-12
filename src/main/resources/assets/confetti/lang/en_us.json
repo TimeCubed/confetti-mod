@@ -1,11 +1,17 @@
 {
-  "text.autoconfig.confetti.option.redL": "Red: ",
-  "text.autoconfig.confetti.option.greenL": "Green: ",
-  "text.autoconfig.confetti.option.blueL": "Blue: ",
-  "text.autoconfig.confetti.option.randomColors": "Random Colors: ",
-  "text.autoconfig.confetti.option.redL2": "Red 2: ",
-  "text.autoconfig.confetti.option.greenL2": "Green 2: ",
-  "text.autoconfig.confetti.option.blueL2": "Blue 2: ",
   "text.autoconfig.confetti.option.particlePercent": "Percent of particles to show: ",
-  "text.autoconfig.confetti.option.doubleColors": "Double Colors"
+  "text.autoconfig.confetti.option.singleColors": "First Colors",
+  "text.autoconfig.confetti.option.singleColors.@Tooltip[0]": "These are the 'first colors'.",
+  "text.autoconfig.confetti.option.singleColors.@Tooltip[1]": "These will be the only colors to appear when 'Double Colors' is off,",
+  "text.autoconfig.confetti.option.singleColors.@Tooltip[2]": "otherwise these colors will appear with the second colors at a ratio of 50:50",
+  "text.autoconfig.confetti.option.singleColors.red": "Red: ",
+  "text.autoconfig.confetti.option.singleColors.green": "Green: ",
+  "text.autoconfig.confetti.option.singleColors.blue": "Blue: ",
+  "text.autoconfig.confetti.option.doubleColors": "Second Colors",
+  "text.autoconfig.confetti.option.doubleColors.@Tooltip": "These colors will appear in a ratio of 50:50 with the 'first colors' when the 'Double Colors' setting is turned on",
+  "text.autoconfig.confetti.option.doubleColors.red": "Red: ",
+  "text.autoconfig.confetti.option.doubleColors.green": "Green: ",
+  "text.autoconfig.confetti.option.doubleColors.blue": "Blue: ",
+  "text.autoconfig.confetti.option.doubleColorsBool": "Double Colors",
+  "text.autoconfig.confetti.option.randomColors": "Random Colors: "
 }
