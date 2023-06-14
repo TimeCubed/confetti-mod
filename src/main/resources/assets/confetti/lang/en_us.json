@@ -14,5 +14,7 @@
   "text.autoconfig.confetti.option.doubleColors.green": "Green: ",
   "text.autoconfig.confetti.option.doubleColors.blue": "Blue: ",
   "text.autoconfig.confetti.option.doubleColorsBool": "Double Colors",
-  "text.autoconfig.confetti.option.randomColors": "Random Colors: "
+  "text.autoconfig.confetti.option.randomColors": "Random Colors: ",
+  "text.autoconfig.confetti.option.vanilla": "Vanilla",
+  "text.autoconfig.confetti.option.vanilla.@Tooltip": "If enabled, this option will disable the custom particle rendering and revert back to the vanilla one"
 }

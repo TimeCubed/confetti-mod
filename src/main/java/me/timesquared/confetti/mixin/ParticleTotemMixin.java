@@ -21,24 +21,24 @@ public class ParticleTotemMixin extends AnimatedParticle {
 	public void onInit(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteProvider spriteProvider, CallbackInfo ci) {
 		ConfigScreen config = AutoConfig.getConfigHolder(ConfigScreen.class).getConfig();
 		
-		if (config.isRandomColors()) {
-			this.setColor((float) Math.random(), (float) Math.random(), (float) Math.random());
-		} else {
-			if (config.isDoubleColors()) {
-				if (Math.random() <= 0.5) {
-					this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
-				} else {
-					this.setColor(config.getRedL2(), config.getGreenL2(), config.getBlueL2());
-				}
-			} else {
-				this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
-			}
+		if (!shouldRender(config.getParticlePercent())) {
+			this.markDead();
 		}
 		
-		long totemPercent = config.getParticlePercent();
-		
-		if (!shouldRender(totemPercent)) {
-			this.markDead();
+		if (!config.isVanilla()) {
+			if (config.isRandomColors()) {
+				this.setColor((float) Math.random(), (float) Math.random(), (float) Math.random());
+			} else {
+				if (config.isDoubleColors()) {
+					if (Math.random() <= 0.5) {
+						this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
+					} else {
+						this.setColor(config.getRedL2(), config.getGreenL2(), config.getBlueL2());
+					}
+				} else {
+					this.setColor(config.getRedL(), config.getGreenL(), config.getBlueL());
+				}
+			}
 		}
 	}
 	

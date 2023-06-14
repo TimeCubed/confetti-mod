@@ -20,6 +20,9 @@ public class ConfigScreen implements ConfigData {
 	boolean randomColors = true;
 	boolean doubleColorsBool = false;
 	
+	@ConfigEntry.Gui.Tooltip
+	boolean vanilla = false;
+	
 	static class SingleColors {
 		@ConfigEntry.BoundedDiscrete(max = 255L)
 		long red = 0L, blue = 0L, green = 0L;
@@ -60,5 +63,8 @@ public class ConfigScreen implements ConfigData {
 	}
 	public boolean isDoubleColors() {
 		return doubleColorsBool;
+	}
+	public boolean isVanilla() {
+		return vanilla;
 	}
 }
