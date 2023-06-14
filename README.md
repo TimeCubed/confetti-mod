@@ -1,6 +1,9 @@
 # The Confetti Mod
 The Confetti mod is a fun and colorful mod for Minecraft that spices up your gameplay by turning totem particles into neat confetti with a bunch of random colors.
 
+## News
+Confetti has been updated to 1.19! I've made JARs for every 1.19 subversion, and I will be making branches for each subversion. In the future to prevent clutter, I will remove these branches and I will make a pull request and update the main branch to 1.19. Currently this is not possible because I haven't yet downported the mod to 1.17 and 1.16. As a further point, my goal is going to be adding support only until 1.16. Most cpvpers play on the newer versions (and so do regular players) as there is no reason to stay on the older versions besides FPS reasons, but due to most servers which used to be on versions 1.14-1.16 updating to the new versions (1.19=1.20), most players have migrated from those versions to 1.19-1.20. Those who couldn't run the newer versions would've at least moved to 1.18 and *its* sub-versions because of the new height changes made in 1.18 onward. I may not consider downporting the mod below 1.17 at all because of this, and 1.18.x as well as the 1.19 sub-versions are enough on their own. I am simply only one developer working on this mod, and although it's very simple, it's still a pain to update every Jar for each version of Minecraft.
+
 ## Installation
 To install the Confetti Mod, you can visit my [Modrinth Page](https://modrinth.com/mod/confetti) to download a version. Currently, this mod only supports 1.18.2. Download the jar file from Modrinth, then add the downloaded jar into your mods folder (usually at %appdata%/.minecraft/mods), then launch minecraft and enjoy the confetti!
 
